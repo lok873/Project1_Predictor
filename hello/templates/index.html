@@ -1,0 +1,136 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <title>Match Winner Predictor</title>
+ 
+  </head>
+  <body background='/static/bg.jpg' style="
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  ">
+  
+    <nav class="navbar navbar-dark bg-dark">
+  <a class="navbar-brand" >
+    <img src="https://cdn.iconscout.com/icon/free/png-512/bootstrap-226077.png" width="35" height="35" class="d-inline-block align-top" alt="">
+    <b>Welcome to Match Winner Predictor</b>
+  </a>
+
+    <form action='about'>
+  <input type="submit" class="btn btn-primary" value="About Us">
+</form>
+
+</nav>
+
+
+    
+  
+<form action="{% url 'dynamic' %}" method="get" >
+
+  <div class="split left" style="height: 7%;
+  margin-top: 0.7in;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  padding-top: 20px;
+  left: 0;
+  ">
+
+  <div class="centered" style=" position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  ">
+  
+  <select name="selectcountry1" class="btn btn-secondary btn-lg dropdown-toggle" >
+  <option value="select" disabled= "true" style="color: grey"selected>Select Country</option>
+  <option value="India" >India</option>
+  <option value="Australia" >Australia</option>
+  <option value="England" >England</option>
+  <option value="New Zealand" >New Zealand</option>
+  </select>
+
+  </div>
+  </div>
+
+  <div class="split right" style="height: 7%;
+  margin-top: 0.7in;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  padding-top: 20px;
+   right: 0;
+  ">
+
+  <div class="centered" style="position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);">
+
+  <select name="selectcountry2" id="cars" class="btn btn-secondary btn-lg dropdown-toggle">
+  <option value="select" disabled= "true" style="color: grey"selected>Select Country</option>
+  <option value="India" >India</option>
+  <option value="Australia" >Australia</option>
+  <option value="England" >England</option>
+  <option value="New Zealand" >New Zealand</option>
+  </select>
+
+  <br>
+
+
+
+  <div class="split right" style="height: 0%;
+  margin-top: 0.5in;
+  width: 0%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  padding-top: 0px;
+   right: 4.5in;
+   background-color: red;
+    ">
+
+    <div class="centered" style="position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(-50%, -50%);">
+
+
+    <input type="submit" value="Select the Countries" style="display: block;" class="btn btn-secondary btn-sm">
+
+    </div>
+  </div>
+
+
+</form>
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+  
+    <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    -->
+  {% block content %}
+  
+  {% endblock content %}
+  </body>
+  
+</html>

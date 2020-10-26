@@ -14,10 +14,14 @@ def dynamic(request):
     # country2 = request.GET['c2']
     # print(country1)
     
+    
     countries = {
         "coun1" : country1,
         "coun2" : country2,
     }
+
+    
+
     # print(countries)
     # print(country1)
     return render(request, "dynamic.html", context=countries)

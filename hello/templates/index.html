@@ -23,7 +23,7 @@
   color: #a6a6a6;
 } </style>
   
-
+<link rel="icon" type="image/png" href="{% static 'applogo.png' %}"/>
 <title>Match Winner Predictor</title>
  </head>
 
@@ -39,7 +39,7 @@
   {% comment %} Navbar {% endcomment %}
 <nav class="navbar navbar-dark bg-dark">
     <a class="navbar-brand" >
-    <img src="https://cdn.iconscout.com/icon/free/png-512/bootstrap-226077.png" width="35" height="35" class="d-inline-block align-top" alt="Match Winner Predictor Logo">
+    <img src="{% static 'applogo.png' %}" width="35" height="35" class="rounded-circle z-depth-1" alt="Match Winner Predictor Logo">
     <b>Welcome to Match Winner Predictor</b>
     </a>
 
@@ -49,13 +49,15 @@
 </nav>
 
 
+<form method="post" action="{% url 'dynamic' %}">
 
+{% csrf_token %}
 {% comment %} Defining a Form for Accepting first and second country and submit button {% endcomment %}
 
 <!--Defining Left Division for Team 1 (team1div)-->
 <div style="float : left; margin-top: 2%; width: 50%; padding-left: 10px;">
 <div style="margin-left: 15px;">
-<select name="selectcountry1" id="c1" onchange="getValue1(this)" onclick="onclickload()" style="width:180px;">
+<select name="selectcountry1" id="c1" onchange="getValue1(this)" style="width:180px;">
     
     <option class="sel" selected value="select">Select Country 1</option>
     <option data-img_src='/static/India.png'  value="India" >India</option>
@@ -4585,7 +4587,7 @@
 </div>
 
 
-
+</form>
 
 
 

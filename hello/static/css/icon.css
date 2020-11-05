@@ -1,23 +1,5 @@
 
 @media only screen 
-and (min-width : 1224px) {
-#icon { 
-  background-image: url('/static/predictorlogo.gif');
-  
-    
-    background-repeat: no-repeat;
-    
-    display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 30%;
-  top:20%;
-  
-}  
-    
-} 
-  
-@media only screen 
 and (min-device-width : 320px) 
 and (max-device-width : 480px) {
   #icon { 
@@ -35,6 +17,8 @@ and (max-device-width : 480px) {
   }  
       
   } 
+  
+
   
 .center1 { 
     position: absolute; 

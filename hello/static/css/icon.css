@@ -12,9 +12,7 @@
   width: 30%;
   top:20%;
   
-}  @media only screen 
-and (min-device-width : 320px) 
-and (max-device-width : 480px) {
+} 
   .center1 { 
     position: absolute; 
     top: 0; 
@@ -27,7 +25,7 @@ and (max-device-width : 480px) {
 } 
  
       
-  } 
+  
   
 
   

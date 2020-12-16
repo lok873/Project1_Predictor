@@ -65,9 +65,15 @@ function drawChart() {
 </nav>
     
 
-    <h1 style="text-decoration: underline;text-decoration-color: green;font-family:'Courier New';  font-size: 30px;"><code>Winning Percentage of Country 1 is {{c1_per}} and of Country 2 is {{c2_per}}</code></h1>
-
-<div  class="container d-flex justify-container-center">
+   <div  style="background-color:transparent;" class="card">
+  <div class="card-body">
+    <h5 style="font-size: 300%;color :#800000;  "class="card-title">Predicted winner is {{win}}</h5>
+    <p style="font-size: 150%;"class="card-text">The percentage of {{country1}} is :=> {{c1_per}}%</p>
+    <p style="font-size: 150%;" class="card-text">The percentage of {{country2}} is :=> {{c2_per}}%</p>
+    
+  </div>
+</div>
+<div class="container d-flex justify-container-center">
     <div class="row">
         <div class="col-md-12">
             <div id="piechart" ></div>
